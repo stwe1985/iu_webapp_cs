@@ -1,0 +1,60 @@
+/*
+@import "../node_modules/bootstrap/scss/functions";
+
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+*/
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+// Ergänzung individueller styles mit Sass Utility-API
+@each $key, $val in $theme-colors {
+    .header-bg-#{$key} {
+        background-color: $val;
+    }
+}
+
+
+
+    $utilities: (
+    
+    "background-color": (
+        property: background-color,
+        class: bg,
+        values: 
+            map-merge($theme-colors, map-merge($blues, $indigos))
+        ),
+    "border-color": (
+        property: border-color,
+        class: border,
+        values: map-merge($theme-colors, map-merge($blues, $indigos))
+        )
+    );
+
+
+@each $key, $val in $blues {
+    .header-#{$key} {
+        background-color: $val
+    }  
+}
+
+$body-bg: $blue-200;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+/*
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+*/
