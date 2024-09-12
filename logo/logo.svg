@@ -1,0 +1,31 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hintergrund -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  
+  <!-- Herzsymbol für Spenden -->
+  <path d="M50,20 
+           A15,15 0 0,1 65,35 
+           A15,15 0 0,1 80,20 
+           A15,15 0 0,1 95,35 
+           Q95,50 50,85 
+           Q5,50 50,20"
+        fill="#e74c3c"/>
+  
+  <!-- Kleidersymbol -->
+  <path d="M140,40 
+           H155 
+           V80 
+           H140 
+           Z 
+           M145,50 
+           V70 
+           H150 
+           V50 
+           Z"
+        fill="#3498db"/>
+  
+  <!-- Text -->
+  <text x="100" y="90" font-family="Arial, sans-serif" font-size="20" fill="#333" text-anchor="middle">
+    Kleiderspende
+  </text>
+</svg>
