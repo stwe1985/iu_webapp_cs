@@ -1,18 +1,19 @@
 import { useRouteError } from "react-router-dom";
+import { Alert } from "react-bootstrap";
 
 export default function ErrorPage() {
     const error = useRouteError();
     console.log(error);
 
     return (
-        <div className="vh-100 d-inline-flex container-fluid justify-content-center" id="errorpage">
-            <div className="align-content-center">
-                <h1 className="text-center">Oh je!</h1>
-                <p className="text-center">Da hat sich ein Spendenpaket verirrt.</p>
-                <p className="text-center">
-                    <i>{error.statusText || error.message}</i>
+        <div className="container-sm">
+            <Alert variant="danger m-5">
+                <h3>Oops!</h3>
+                <p>
+                    Da hat sich ein Spendenpaket verirrt..
                 </p>
-            </div>
+                <p>{error.message}</p>
+            </Alert>
         </div>
     );
 }
