@@ -1,16 +1,9 @@
 import "../../scss/style.scss";
 import Nav from "./nav";
 export default function Root() {
-
-    const nav = {
-        home: ['home', '/'],
-        spende: ['spenden', 'spenden'],
-        about: ["über uns", "about"],
-    }
-
     
 
-    return (
+    return (    
         <div className="d-flex flex-column h-100">
 
                 <header className="shadow border-1 border-bottom border-blue-200 bg-blue-400">
@@ -28,7 +21,16 @@ export default function Root() {
 
                         </div>
                     </div>
-                    <Nav linkMap={nav} />
+                    
+                    <Nav linkMap={
+                        // set navigation values with corresponding route paths
+                        {
+                            home: ['home', '/'],
+                            spende: ['spenden', 'spenden'],
+                            about: ["über uns", "about"],
+                        }
+                    } />
+
                 </header>
 
                 <main className="h-100 m-2 ms-5 me-5">

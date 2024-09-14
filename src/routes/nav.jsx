@@ -28,7 +28,9 @@ export default class Nav extends Component {
                     
                 );
 
+
         }
+        console.log(links);
 
 
         return (
