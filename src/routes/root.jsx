@@ -37,7 +37,7 @@ export default function Root() {
 
                 </main>
 
-                <footer className="align-items-end text-light text-center shadow border-1 border-top border-blue-400 bg-blue-300 p-3">
+                <footer className="align-items-end text-light text-center border-1 border-top border-aqua-marine-blue text-darkgrey p-3">
                     Impressum Datenschutzerklärung
                 </footer>
 
