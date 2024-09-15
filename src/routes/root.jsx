@@ -4,16 +4,16 @@ export default function Root() {
     
 
     return (    
-        <div className="d-flex flex-column h-100">
+        <div className="container d-flex flex-column h-100">
 
-                <header className="shadow border-1 border-bottom border-blue-200 bg-blue-400">
+                <header className=" shadow-none border-1 border-bottom border-aqua-marine-blue bg-blue-400">
                     <div className="d-flex flex-row position-relative">
                         <div className="d-flex col justify-content-start">
-                            <img src="../../logo/logo1.svg" width="80px" height="80px" alt="logo" />  
+                            <img src="../../logo/logo1.svg" alt="logo" id="logo" className="m-2 rounded-circle bg-bluegreen img-fluid"/>  
                         </div>
                         <div className="d-flex col align-items-center justify-content-center"> 
                         
-                            <h1 className="display-4 text-center text-light fw-light"><em>KleiderHelden</em></h1>
+                            <h1 className="display-4 text-center fw-light text-bluegreen"><em>KleiderHelden</em></h1>
                             <h3 className="text-center"><em></em></h3>
                         </div>
                         

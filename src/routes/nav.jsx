@@ -23,7 +23,7 @@ export default class Nav extends Component {
             console.log(key, path);
                 links.push(
                     <li className="nav-item pe-2 ps-2 " key={key}>
-                        <Link className="nav-link active text-center fw-bold" to={path}>{name}</Link>
+                        <Link className="nav-link active text-bluegreen" to={path}>{name}</Link>
                     </li>
                     
                 );

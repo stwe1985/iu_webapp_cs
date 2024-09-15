@@ -21,7 +21,12 @@
     }
 }
 
-
+$default-colors: (
+    "bluegreen": #2b6777,
+    "grey": #c8d8e4,
+    "darkgrey": #dacdcd,
+    "aqua-marine-blue": #52ab98
+);
 
     $utilities: (
     
@@ -29,23 +34,29 @@
         property: background-color,
         class: bg,
         values: 
-            map-merge($theme-colors, map-merge($blues, $indigos))
+            map-merge($theme-colors, $default-colors)
         ),
     "border-color": (
         property: border-color,
         class: border,
-        values: map-merge($theme-colors, map-merge($blues, $indigos))
-        )
+        values: map-merge($theme-colors, $default-colors)
+        ),
+    "color": (
+        property: color,
+        class: text,
+        values: map-merge($theme-colors, $default-colors)
+        ),
+
     );
 
 
-@each $key, $val in $blues {
-    .header-#{$key} {
-        background-color: $val
-    }  
-}
+        #logo {
+            width: 50%;
+            height: auto;
+        }
 
-$body-bg: $blue-100;
+
+$body-bg: #ffffff;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 /*
