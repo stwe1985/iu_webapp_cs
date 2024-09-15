@@ -12,7 +12,7 @@
 @import "../node_modules/bootstrap/scss/type";
 */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 // Ergänzung individueller styles mit Sass Utility-API
 @each $key, $val in $theme-colors {
@@ -33,8 +33,7 @@ $utilities: (
 "background-color": (
     property: background-color,
     class: bg,
-    values: 
-        map-merge($theme-colors, $default-colors)
+    values: map-merge($theme-colors, $default-colors)
     ),
 "border-color": (
     property: border-color,
@@ -48,7 +47,6 @@ $utilities: (
     ),
 
 );
-
 
     #logo {
         width: 50%;

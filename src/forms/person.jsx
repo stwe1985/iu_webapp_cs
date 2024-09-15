@@ -1,6 +1,7 @@
 import "../../scss/style.scss";
 import { useState } from "react";
-import { Form, InputGroup, Row, Col, FloatingLabel, Container } from "react-bootstrap";
+import { Form, InputGroup, Row, Col, FloatingLabel, Container, Button } from "react-bootstrap";
+
 
 
 export default function Person() {
@@ -56,11 +57,21 @@ export default function Person() {
                             </Col>
                         </Row>
                         <Row className="gx-1">
-                            <Col xs md lg className="gy-1">
+                            <Col xs="12" md="12" lg="6" className="gy-1">
                                 <InputGroup>
-                                    <InputGroup.Text>@</InputGroup.Text>
-                                    <Form.Control required size="lg" aria-label="email" aria-describedby="email-label"/>
+                                    <InputGroup.Text><i style={{fontSize: 28}} className="bi bi-envelope-at m-0 p-0"></i></InputGroup.Text>
+                                    <Form.Control required type="email" size="lg" aria-label="email" aria-describedby="email-label"/>
                                 </InputGroup>
+                            </Col>
+                            <Col xs="12" md="12" lg="6" className="gy-1">
+                                <InputGroup>
+                                    <InputGroup.Text><i style={{fontSize: 28}} className="bi-telephone m-0 p-0"></i></InputGroup.Text>
+                                    <Form.Control type="tel" pattern="[0-9]{9,11}" size="lg" aria-label="phone" aria-describedby="phone"></Form.Control>
+                                </InputGroup>
+                            
+                            </Col>
+                            <Col className="gy-1 d-flex justify-content-center">
+                                <Button type="submit" className="">Absenden</Button>
                             </Col>
                         </Row>
                     </Container>
