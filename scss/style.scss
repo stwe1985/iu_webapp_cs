@@ -39,24 +39,16 @@ $default-colors: (
     "border-color": (
         property: border-color,
         class: border,
-        values: map-merge($theme-colors, $default-colors)
-        ),
-    "color": (
-        property: color,
-        class: text,
-        values: map-merge($theme-colors, $default-colors)
-        ),
-
+        values: map-merge($theme-colors, map-merge($blues, $indigos))
+        )
     );
 
 
-        #logo {
-            width: 50%;
-            height: auto;
-            max-width: 100px;
-            max-height: 100px;
-        }
-
+@each $key, $val in $blues {
+    .header-#{$key} {
+        background-color: $val
+    }  
+}
 
 $body-bg: #ffffff;
 
