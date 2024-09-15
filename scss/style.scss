@@ -45,6 +45,9 @@
     }  
 }
 
+$input-bg: white;
+$input-focus-bg: $input-bg;
+$input-color: black;
 $body-bg: $blue-100;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

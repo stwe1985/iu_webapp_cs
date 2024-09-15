@@ -1,5 +1,7 @@
 import "../../scss/style.scss";
 import Nav from "./nav";
+import { Outlet } from "react-router-dom";
+
 export default function Root() {
     
 
@@ -34,7 +36,7 @@ export default function Root() {
                 </header>
 
                 <main className="h-100 m-2 ms-5 me-5">
-
+                    <Outlet/>
                 </main>
 
                 <footer className="align-items-end text-light text-center shadow border-1 border-top border-blue-400 bg-blue-300 p-3">

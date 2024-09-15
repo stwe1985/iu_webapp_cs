@@ -7,13 +7,19 @@ import {
 
 import Root from "./routes/root";
 import ErrorPage from "./error";
+import Person from "./forms/person";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Root />,
-        children: [],
-        errorElement: <ErrorPage></ErrorPage>,
+        children: [
+            {
+                path: "spenden",
+                element: <Person />,
+            }
+        ],
+        errorElement: <ErrorPage />,
     },
 
 ]);
