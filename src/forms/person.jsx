@@ -1,6 +1,6 @@
 import "../../scss/style.scss";
 import { useState } from "react";
-import { Form, FloatingLabel, Button, InputGroup } from "react-bootstrap";
+import { Form, InputGroup } from "react-bootstrap";
 
 
 export default function Person() {
